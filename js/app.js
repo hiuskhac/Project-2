@@ -49,7 +49,7 @@ sections.forEach((rs, index) => {
 // Add class 'active' to section when near top of viewport
 
 function makeActive() {
-  for (const section of sections) {
+  sections.forEach((section, index) => {
     const box = section.getBoundingClientRect();
     //Find a value that works best, but 150 seems to be a good start.
     if (
@@ -59,11 +59,13 @@ function makeActive() {
     ) {
       //apply active state on current section and corresponding Nav link
       section.classList.add("active");
+      navbarList.children[index].classList.add("active-nav");
     } else {
       //Remove active state from other section and corresponding Nav link
       section.classList.remove("active");
+      navbarList.children[index].classList.remove("active-nav");
     }
-  }
+  });
 }
 window.addEventListener("scroll", makeActive);
 makeActive();
