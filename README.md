@@ -10,9 +10,9 @@ For specific, detailed instructions, look at the project instructions in the Uda
 
 ### This project has the following features
 
-- Build the navigation menu
-  This will dynamically create a navigation menu based on the sections of the page
-- Add functionality to distinguish the section in view
-  While navigating through the page, the section that is active in the viewport/closest to the top should be distinguished from the other sections. More specifically, when dragging to the active section, add the active class to the corresponding section tag
+- Build the navigation menu:
+  <p>This will dynamically create a navigation menu based on the sections of the page</p>
+- Add functionality to distinguish the section in view:
+  <p>While navigating through the page, the section that is active in the viewport/closest to the top should be distinguished from the other sections. More specifically, when dragging to the active section, add the active class to the corresponding section tag</p>
 - Add the functionality to scroll to sections:
-  Clicking on a navigation item should scroll to the appropriate section of the page.
+  <p>Clicking on a navigation item should scroll to the appropriate section of the page.</p>
